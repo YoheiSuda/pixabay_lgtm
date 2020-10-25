@@ -1,8 +1,10 @@
 <template>
-	<div class="Pixabay">
-		<PixabaySearch @searchResult="getSearchResult"/>
-		<PixabayResult v-bind:resultJson="resultJson"/>
-	</div>
+	<section class="section Pixabay">
+		<div class="container">
+			<PixabaySearch @searchResult="getSearchResult"/>
+			<PixabayResult v-bind:resultJson="resultJson"/>
+		</div>
+	</section>
 </template>
 
 <script>
@@ -28,6 +30,5 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
 </style>

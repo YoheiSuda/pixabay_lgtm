@@ -1,7 +1,11 @@
 <template>
-	<div class="PixabaySearch">
-		<input v-model="searchKey" name="key" type="text" placeholder="文字を入力してください">
-		<button v-on:click="searchPicture">検索する</button>
+	<div class="PixabaySearch field has-addons">
+		<div class="control">
+			<input class="input" v-model="searchKey" name="key" type="text" placeholder="e.g.)flower">
+		</div>
+		<div class="control">
+			<button class="button is-info" v-on:click="searchPicture">Search</button>
+		</div>
 	</div>
 </template>
 
@@ -14,7 +18,7 @@ export default {
 		}
 	},
 	created() {
-
+		this.searchPicture();
 	},
 
 	methods: {
@@ -41,5 +45,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.PixabaySearch {
+	input {
 
+	}
+
+}
 </style>
